@@ -20,9 +20,12 @@
 .accentTitle {
   display: inline-block;
   background-color: var(--bg-light-blue);
+  border-radius: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
   font-style: italic;
   font-weight: 400;
-  margin: 0 12px;
+  margin: 0 6px;
 }
 
 .homeText {
