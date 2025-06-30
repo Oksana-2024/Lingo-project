@@ -1,0 +1,31 @@
+.textError {
+  height: 18px;
+  font-size: small;
+  color: var(--red);
+}
+
+.loginInput {
+  width: 100%;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.loginBtn {
+  width: 100%;
+}
+
+.togglePassButton {
+  background-color: transparent;
+  position: absolute;
+  top: 88px;
+  right: 17px;
+}
+
+.loginFotm {
+  position: relative;
+}
+
+.textError:last-of-type {
+  margin-bottom: 22px;
+}

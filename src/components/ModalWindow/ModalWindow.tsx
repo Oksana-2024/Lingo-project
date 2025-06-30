@@ -1,27 +1,11 @@
 import { type ReactNode } from "react";
 import Modal from "react-modal";
 Modal.setAppElement("#root");
-import { noScrollDisable, noScrollEnable } from "../../helpers/noScroll";
 import { MdClose } from "react-icons/md";
+import { noScrollDisable, noScrollEnable } from "../../helpers/noScroll";
 import clsx from "clsx";
 import s from "./ModalWindow.module.css";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -48%)",
-    padding: "20px",
-    borderRadius: "30px",
-    maxWidth: "599px",
-  },
-  overlay: {
-    zIndex: "8",
-  },
-};
 
 interface IModalWindow {
   children: ReactNode;
@@ -46,7 +30,17 @@ const ModalWindow = ({
     <Modal
       isOpen={modalIsOpen}
       onRequestClose={closeModal}
-      style={customStyles}
+      closeTimeoutMS={300}
+      className={{
+        base: s.modalBase,
+        afterOpen: s.modalAfterOpen,
+        beforeClose: s.modalBeforeClose,
+      }}
+      overlayClassName={{
+        base: s.overlayBase,
+        afterOpen: s.overlayAfterOpen,
+        beforeClose: s.overlayBeforeClose,
+      }}
       ariaHideApp={false}
       onAfterOpen={noScrollEnable}
       onAfterClose={noScrollDisable}

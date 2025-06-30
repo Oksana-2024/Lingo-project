@@ -1,0 +1,112 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-white);
+  box-shadow: 0 2px 5px var(--badges-border);
+  z-index: 1;
+}
+.headerContainer {
+  padding: 0 128px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.logInBtn {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 166px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+
+.logInBtn:hover {
+  border: 1px solid var(--bg-light-blue);
+}
+
+.logoutIcon {
+  stroke: var(--bg-blue);
+}
+
+.registerBtn {
+  color: var(--white-color);
+  background-color: var(--bg-black);
+  padding: 14px 39px;
+  width: 166px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 12px;
+  border: 1px solid var(--bg-black);
+}
+
+.registerBtn:hover {
+  color: var(--main-color);
+  background-color: transparent;
+}
+
+.user {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 166px;
+}
+
+.logOutForm {
+  padding: 0 24px 36px;
+}
+
+.logOutBtn {
+  composes: logInBtn;
+  width: 100px;
+}
+
+.cancelBtn {
+  width: 100%;
+  border: 2px solid var(--bg-blue);
+  transition: background-color 500ms var(--transition);
+  margin-bottom: 24px;
+}
+
+.comfirmBtn {
+  width: 100%;
+  background-color: var(--bg-light-blue);
+  border: 2px solid var(--bg-light-blue);
+  transition: background-color 500ms var(--transition);
+}
+
+.comfirmBtn:hover,
+.cancelBtn:hover {
+  background-color: transparent;
+}

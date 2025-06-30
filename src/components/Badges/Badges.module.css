@@ -1,0 +1,8 @@
+.badges {
+  border: 1px solid var(--badges-border);
+  border-radius: 35px;
+  padding: 8px 12px;
+  width: auto;
+}
+
+

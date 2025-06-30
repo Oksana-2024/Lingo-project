@@ -1,0 +1,258 @@
+.readMoreBtn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.teacherCard {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 48px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.decorImg {
+  border-radius: 100px;
+  padding: 12px;
+  width: 120px;
+  height: 120px;
+  border: 3px solid var(--bg-light-blue);
+  position: relative;
+}
+
+.teacherImg {
+  border-radius: 100px;
+}
+
+.online {
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  position: absolute;
+  top: 17px;
+  right: 22px;
+  border: 2px solid var(--bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconOnline {
+  fill: var(--green);
+}
+
+.headerCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 192px;
+  margin-bottom: 8px;
+}
+
+.language {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--placeholder);
+}
+
+.descriptionBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.descr span:not(:last-child)::after {
+  content: "|";
+  margin-left: 16px;
+  color: var(--badges-border);
+}
+
+.bookIcon {
+  margin-right: 8px;
+}
+
+.starIcon {
+  fill: var(--gold);
+  margin-right: 8px;
+}
+
+.descrRating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price {
+  color: var(--green);
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.teacherName {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 32px;
+}
+
+.conditions {
+  color: var(--placeholder);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.last {
+  margin-bottom: 16px;
+}
+
+.conditions span {
+  color: var(--main-color);
+}
+
+.readMoreBtn {
+  background-color: transparent;
+  display: inline-flex;
+  width: 78px;
+  margin-bottom: 32px;
+}
+.bookBtn {
+  background-color: var(--bg-blue);
+  width: 232px;
+}
+
+.heartBtn {
+  background-color: transparent;
+}
+
+.badgesWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.includesBadge {
+  background-color: var(--bg-blue);
+  border: none;
+}
+
+.experience {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.reviewsWrapper {
+  font-weight: 500;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 44px);
+  grid-template-rows: repeat(2, auto);
+  margin-bottom: 16px;
+  gap: 2px 12px;
+}
+
+.reviewsIcon {
+  fill: var(--gold);
+}
+
+.languageStyle {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.reviewerName {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--placeholder);
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.rating {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.ratingWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.avatarReviewer {
+  width: 44px;
+  height: 44px;
+  border-radius: 100px;
+  background-color: var(--bg-light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.favoriteIcon {
+  fill: var(--bg-blue);
+}
+
+.bookTeacher {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--placeholder);
+}
+
+.bookWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.nameBookTeacher {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* .modalScroll{
+  overflow: scroll;
+} */
